@@ -1,27 +1,20 @@
 == README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Steps to run the app
 
-Things you may want to cover:
+1. Install Rails 4.2.4 with ruby version 2.2.0 preferred.
 
-* Ruby version
+2. <tt> bundle exec rake db:create </tt>
 
-* System dependencies
+3. <tt> bundle exec rake db:migrate </tt>
 
-* Configuration
+4. The postman collection link can be found at https://www.getpostman.com/collections/32917ce2f4038bce9bba
 
-* Database creation
 
-* Database initialization
 
-* How to run the test suite
 
-* Services (job queues, cache servers, search engines, etc.)
 
-* Deployment instructions
 
-* ...
 
 
 Please feel free to use a different markup language if you do not plan to run

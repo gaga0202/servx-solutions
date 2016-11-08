@@ -5,5 +5,7 @@ class CreateSessionIdentifier < ActiveRecord::Migration
       t.string :authentication_token
       t.timestamp :expires_at
     end
+
+    add_index(:session_identifiers,:authentication_token)
   end
 end

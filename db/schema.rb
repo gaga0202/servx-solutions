@@ -11,20 +11,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161108211204) do
-
-  create_table "beers", force: :cascade do |t|
-    t.string "name"
-    t.string "description"
-  end
-
-  add_index "beers", ["name"], name: "index_beers_on_name"
+ActiveRecord::Schema.define(version: 20161108172524) do
 
   create_table "session_identifiers", force: :cascade do |t|
     t.integer  "user_id"
     t.string   "authentication_token"
     t.datetime "expires_at"
   end
+
+  add_index "session_identifiers", ["authentication_token"], name: "index_session_identifiers_on_authentication_token"
 
   create_table "users", force: :cascade do |t|
     t.string "email"
