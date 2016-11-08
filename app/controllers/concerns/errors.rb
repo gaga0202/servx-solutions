@@ -14,5 +14,6 @@ module Errors
     rescue_from LoginNotSuccessful, :with => :render_bad_request
     rescue_from NotAllowed, :with => :render_forbidden
     rescue_from InvalidSignup, :with => :render_not_acceptable
+    rescue_from InvalidBeerType, :with => :render_not_found
   end
 end

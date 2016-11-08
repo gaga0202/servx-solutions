@@ -1,0 +1,3 @@
+class InvalidBeerType < StandardError
+
+end

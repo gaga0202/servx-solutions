@@ -3,6 +3,8 @@ Rails.application.routes.draw do
   post '/signup', to: 'session#signup'
   post '/login', to: 'session#login'
   get '/beers/:beer_type', to: 'beer_type#beer_index'
+  get '/beers_rest/:beer_type', to: 'beer_type#beer_index_rest'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
