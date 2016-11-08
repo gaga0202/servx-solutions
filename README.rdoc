@@ -10,3 +10,5 @@ Steps to run the app
 
 4. The postman collection link can be found at https://www.getpostman.com/collections/32917ce2f4038bce9bba
 
+Question No. 2 is in Session_controller.rb
+Question No. 4 is in beer_type_controller.rb
