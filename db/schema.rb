@@ -15,7 +15,7 @@ ActiveRecord::Schema.define(version: 20161108172524) do
 
   create_table "session_identifiers", force: :cascade do |t|
     t.integer  "user_id"
-    t.integer  "authetication_token"
+    t.string   "authentication_token"
     t.datetime "expires_at"
   end
 

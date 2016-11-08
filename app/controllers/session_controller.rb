@@ -21,7 +21,7 @@ class SessionController < ApplicationController
 
 
   def permit_params(params)
-    params.permit(:first_name,:last_name,:email,:password,:confirm_password)
+    params.permit(:first_name,:last_name,:email,:password,:password_confirmation)
   end
 
   def login_permit_params(params)

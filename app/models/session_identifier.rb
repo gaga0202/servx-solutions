@@ -16,16 +16,16 @@ class SessionIdentifier < ActiveRecord::Base
 
   def set_authentication_token
     loop do
-      self.authetication_token =  SecureRandom.uuid.gsub(/\-/,'') + Time.current.to_i
-      break self.authetication_token unless SessionIdentifier.
-          where(authetication_token: self.authetication_token).first
+      self.authentication_token =  "#{SecureRandom.uuid.gsub(/\-/,'')}#{Time.current.to_i}"
+      break self.authentication_token unless SessionIdentifier.
+          where(authentication_token: self.authentication_token).first
     end
 
   end
 
 
   def set_expires_at
-    self.set_expires_at = Time.current + 30.days
+    self.expires_at = Time.current + 30.days
   end
 
 

@@ -7,12 +7,12 @@ class SignupValidationService
 
   def create_user
     user = User.new(create_params)
-    raise InvalidSignup, user.errors.full_messages  if !user.save
+    raise InvalidSignup, "#{user.errors.full_messages.to_sentence}"  if !user.save!
   end
 
   def create_params
     {
-        first_name: @parmas[:first_name],
+        first_name: @params[:first_name],
         last_name: @params[:last_name],
         email: @params[:email],
         password: @params[:password],
