@@ -1,0 +1,3 @@
+class InvalidSignup < StandardError
+
+end
