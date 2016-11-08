@@ -1,0 +1,3 @@
+class LoginNotSuccessful < StandardError
+
+end
